@@ -1,0 +1,115 @@
+body{
+    min-height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    /* color: white; */
+    background-color: #D5CDB9;
+}
+.title{
+    margin: 0.3rem;
+}
+.notification{
+    text-align: center;
+    font-weight: bolder;
+    /* font-size: 1.5rem; */
+    color: #D80612;
+    margin-top: 0.5rem;
+}
+.close{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.searchText{
+    border-radius: 50px;
+}
+.searchButton{
+    width: 100%;
+    margin-top: 0.7rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+.jsonDump_illustraion{
+    width: 100%;
+}
+.start{
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+.start span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.start span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.start:hover span {
+    padding-right: 25px;
+}
+.start:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.box{
+    padding: 1rem;
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 15%); 
+}
+.hide{
+    display: none;
+  }
+.btm{
+    text-align: center;
+}
+.footingbg{
+    background-image: linear-gradient(92deg, #f35626, #feab3a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 10s infinite linear;
+    -webkit-animation: hue 10s infinite linear;
+    -moz-animation: hue 10s infinite linear;
+}
+@keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+}
+footer{
+  position: sticky;
+  top: 100%;
+  padding: 0.1rem;
+  margin-top: 1.5rem;
+}
+@media(min-width:770px){
+    .inputs{
+        width: 30%;
+        margin: auto;
+    }
+    .box{
+        width: 50%;
+        margin: 1rem auto;
+    }
+    .searchButton{
+        margin-bottom: 0;
+    }
+}
