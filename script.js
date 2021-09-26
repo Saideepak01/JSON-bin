@@ -28,6 +28,7 @@ function mainScrn(){
                     &emsp;<b>'What is this ?':</b> 'It is a JSON Storage on the cloud for web and mobile apps',<br/>
                     &emsp;<b>'Feature1':</b> 'Zero database setup or maintenance',<br/>
                     &emsp;<b>'Feature2':</b> 'Data is private & secure so you can have total control',<br/>
+		    &emsp;<b>'NOTE':</b> 'JSON data size limited to 500KB',<br/>
                 }<br/><br/>
                 <button type="submit" class=" btn btn-outline-dark start" onclick="jsonTextBox()"><span>Get Started</span></button>
             </div>
